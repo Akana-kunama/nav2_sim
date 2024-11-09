@@ -1,0 +1,13 @@
+<!-- robot_environment/worlds/empty_world.world -->
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="empty_world">
+    <!-- Include your environment model -->
+    <include>
+      <uri>model://models</uri>
+    </include>
+
+    <!-- Other world configurations can go here -->
+
+  </world>
+</sdf>
