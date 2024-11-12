@@ -19,6 +19,10 @@ install(DIRECTORY models/
 install(DIRECTORY worlds/
   DESTINATION share/${PROJECT_NAME}/worlds)
 
+# Install launch files
+install(DIRECTORY launch/
+  DESTINATION share/${PROJECT_NAME}/launch)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
