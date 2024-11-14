@@ -1,1 +1,1 @@
-robot_state_publisher:rviz2:xacro
+joint_state_publisher:robot_state_publisher:rviz2:xacro

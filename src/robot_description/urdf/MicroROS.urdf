@@ -2,19 +2,10 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot
-  name="micro4.0">
-
-  <gazebo>
-    <plugin name="gazebo_ros_control" filename="libgazebo_ros2_control.so">
-      <robotNamespace>/</robotNamespace>
-    </plugin>
-  </gazebo>
+<robot name="micro4.0">
 
 
-
-  <link
-    name="base_link">
+  <link name="base_link">
     <inertial>
       <origin
         xyz="-0.0038187037800903 -0.000532399212617988 -0.00668209865413972"
@@ -34,13 +25,11 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/base_link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
-        <color
-          rgba="1 1 1 1" />
+        <color rgba="1 1 1 1" />
       </material>
     </visual>
     <collision>
@@ -53,8 +42,13 @@
       </geometry>
     </collision>
   </link>
-  <link
-    name="zq_Link">
+
+
+
+
+
+
+  <link name="zq_Link">
     <inertial>
       <origin
         xyz="2.84786462870987E-05 0.00150864010556555 -6.41979491855862E-06"
@@ -74,13 +68,11 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zq_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zq_Link.STL" />
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+        <color gba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
       </material>
     </visual>
     <collision>
@@ -93,9 +85,8 @@
       </geometry>
     </collision>
   </link>
-  <joint
-    name="zq_Joint"
-    type="continuous">
+
+  <joint name="zq_Joint" type="continuous">
     <origin
       xyz="0.0455 0.0675 -0.02125"
       rpy="0 0 0" />
@@ -127,46 +118,35 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yq_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yq_Link.STL" />
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+        <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
       </material>
     </visual>
     <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
+      <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yq_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yq_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
-    name="yq_Joint"
-    type="continuous">
+
+
+  <joint name="yq_Joint" type="continuous">
     <origin
       xyz="0.0455 -0.0675 -0.02125"
       rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="yq_Link" />
-    <axis
-      xyz="0 -1 0" />
+    <parent link="base_link" />
+    <child link="yq_Link" />
+    <axis xyz="0 -1 0" />
   </joint>
-  <link
-    name="yh_Link">
+
+  <link name="yh_Link">
     <inertial>
-      <origin
-        xyz="-3.70764732487289E-06 -0.00150864010086474 -2.89569007898387E-05"
-        rpy="0 0 0" />
-      <mass
-        value="0.0141019725703797" />
+      <origin xyz="-3.70764732487289E-06 -0.00150864010086474 -2.89569007898387E-05" rpy="0 0 0" />
+      <mass value="0.0141019725703797" />
       <inertia
         ixx="2.66453003257312E-06"
         ixy="5.38819271008195E-11"
@@ -180,13 +160,11 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yh_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yh_Link.STL" />
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+        <color rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
       </material>
     </visual>
     <collision>
@@ -194,26 +172,22 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yh_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yh_Link.STL" />
       </geometry>
     </collision>
   </link>
+
   <joint
-    name="yh_Joint"
-    type="continuous">
+    name="yh_Joint" type="continuous">
     <origin
       xyz="-0.0495 -0.0675 -0.02125"
       rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="yh_Link" />
-    <axis
-      xyz="0 -1 0" />
+    <parent link="base_link" />
+    <child link="yh_Link" />
+    <axis xyz="0 -1 0" />
   </joint>
-  <link
-    name="zh_Link">
+
+  <link name="zh_Link">
     <inertial>
       <origin
         xyz="2.71005454374126E-05 0.00150864011455075 -1.08539409463503E-05"
@@ -233,13 +207,11 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zh_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zh_Link.STL" />
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+        <color gba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
       </material>
     </visual>
     <collision>
@@ -247,24 +219,54 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zh_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zh_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
-    name="zh_Joint"
-    type="continuous">
+
+  <joint name="zh_Joint" type="continuous">
     <origin
       xyz="-0.0495 0.0675 -0.02125"
       rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="zh_Link" />
-    <axis
-      xyz="0 1 0" />
+    <parent link="base_link" />
+    <child link="zh_Link" />
+    <axis xyz="0 1 0" />
   </joint>
+
+
+  <gazebo>
+    <plugin name='diff_drive' filename='libgazebo_ros_diff_drive.so'>
+      <ros>
+        <namespace>/</namespace>
+      </ros>
+      <!-- wheels -->
+      <left_joint>zh_Joint</left_joint>
+      <right_joint>yh_Joint</right_joint>
+      <!-- kinematics -->
+      <wheel_separation>0.4</wheel_separation>
+      <wheel_diameter>0.2</wheel_diameter>
+
+
+      <!-- limits -->
+      <max_wheel_torque>20</max_wheel_torque>
+      <max_wheel_acceleration>1.0</max_wheel_acceleration>
+
+
+      <!-- output -->
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>false</publish_odom_tf>
+      <publish_wheel_tf>true</publish_wheel_tf>
+      <odometry_frame>odom</odometry_frame>
+      <robot_base_frame>base_link</robot_base_frame>
+    </plugin>
+
+  </gazebo>
+
+
+
+
+
+
   <link
     name="imu_Link">
     <inertial>
@@ -286,13 +288,11 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/imu_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/imu_Link.STL" />
       </geometry>
       <material
         name="">
-        <color
-          rgba="0.149019607843137 0.149019607843137 0.149019607843137 1" />
+        <color rgba="0.149019607843137 0.149019607843137 0.149019607843137 1" />
       </material>
     </visual>
     <collision>
@@ -300,24 +300,98 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/imu_Link.STL" />
+        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/imu_Link.STL" />
       </geometry>
     </collision>
   </link>
-  <joint
-    name="imu_Joint"
-    type="fixed">
-    <origin
-      xyz="-0.002999 -0.0030001 0.031701"
-      rpy="0 0 0" />
-    <parent
-      link="base_link" />
-    <child
-      link="imu_Link" />
-    <axis
-      xyz="0 0 0" />
+
+  <joint name="imu_Joint" type="fixed">
+    <origin xyz="-0.002999 -0.0030001 0.031701" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="imu_Link" />
+    <axis xyz="0 0 0" />
   </joint>
+
+
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+     <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <ros>
+          <namespace>/</namespace>
+          <remapping>~/out:=imu</remapping>
+        </ros>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+      </plugin>
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <imu>
+        <angular_velocity>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </x>
+
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </y>
+
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </z>
+
+        </angular_velocity>
+
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </x>
+
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </y>
+
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
+
+
+
+
+
   <link
     name="radar_Link">
     <inertial>
@@ -358,6 +432,10 @@
       </geometry>
     </collision>
   </link>
+
+
+
+
   <joint
     name="radar_Joint"
     type="fixed">
