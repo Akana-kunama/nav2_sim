@@ -12,11 +12,32 @@ controller_server:
   ros__parameters:
     use_sim_time: True
     # Controller parameters...
+    expected_controller_frequency: 20.0
+    controller_plugins: ["FollowPath"]
+    FollowPath:
+      plugin: "nav2_regulated_pure_pursuit_controller/RegulatedPurePursuitController"
+      base_frame: "base_link"
+      cmd_vel_topic: "cmd_vel"
+      feedback_topic: "path_feedback"
+      max_vel_x: 0.5
+      max_vel_theta: 1.0
+      min_vel_x: 0.1
+      min_vel_theta: 0.1
+      yaw_goal_tolerance: 0.1
+      xy_goal_tolerance: 0.2
+
 
 planner_server:
   ros__parameters:
     use_sim_time: True
     # Planner parameters...
+    ros__parameters:
+    expected_planner_frequency: 1.0
+    planner_plugins: ["GridBased"]
+    GridBased:
+      plugin: "nav2_navfn_planner/NavfnPlanner"
+      tolerance: 0.5
+
 
 behavior_server:
   ros__parameters:
@@ -27,6 +48,7 @@ bt_navigator:
   ros__parameters:
     use_sim_time: True
     # BT Navigator parameters...
+    default_bt_xml_filename: "navigate_w_replanning_and_recovery.xml"
 
 lifecycle_manager:
   ros__parameters:
@@ -39,3 +61,4 @@ lifecycle_manager:
       - "bt_navigator"
       - "amcl"
       - "map_server"
+  launch_on_startup: True

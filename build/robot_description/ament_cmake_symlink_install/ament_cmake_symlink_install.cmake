@@ -322,6 +322,9 @@ ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/rob
 # install(DIRECTORY "rviz/" "DESTINATION" "share/robot_description/rviz")
 ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description" DIRECTORY "rviz/" "DESTINATION" "share/robot_description/rviz")
 
+# install(DIRECTORY "config/" "DESTINATION" "share/robot_description/config")
+ament_cmake_symlink_install_directory("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description" DIRECTORY "config/" "DESTINATION" "share/robot_description/config")
+
 # install(FILES "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 ament_cmake_symlink_install_files("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description" FILES "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/robot_description" "DESTINATION" "share/ament_index/resource_index/package_run_dependencies")
 
