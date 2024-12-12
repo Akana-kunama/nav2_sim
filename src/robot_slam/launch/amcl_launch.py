@@ -3,6 +3,7 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 from launch.actions import DeclareLaunchArgument, LogInfo
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+from launch_ros.substitutions import FindPackageShare
 from ament_index_python.packages import get_package_share_directory
 
  
@@ -18,20 +19,22 @@ def generate_launch_description():
         description="Use simulation/Gazebo clock"
     )
 
+    # Declare the 'map_file' argument
     map_file_arg = DeclareLaunchArgument(
         "map_file",
         default_value=PathJoinSubstitution([
-            get_package_share_directory("robot_slam"),
+            FindPackageShare("robot_slam"),
             "maps",
             "saved_map.yaml"
         ]),
-        description="Full path to the yaml map file",
+        description="Full path to the yaml map file"
     )
 
+    # Declare the 'amcl_params_file' argument
     amcl_params_file_arg = DeclareLaunchArgument(
         "amcl_params_file",
         default_value=PathJoinSubstitution([
-            get_package_share_directory("robot_slam"),
+            FindPackageShare("robot_slam"),
             "config",
             "amcl.config.yaml"
         ]),

@@ -13,11 +13,25 @@ find_package(nav2_map_server REQUIRED)
 find_package(nav2_amcl REQUIRED)
 find_package(nav2_lifecycle_manager REQUIRED)
 find_package(slam_toolbox REQUIRED)
-find_package(ros2_lifecycle REQUIRED)
+# find_package(ros2_lifecycle REQUIRED)
 
-# install config launch maps params
-install(DIRECTORY config launch maps params
-        DESTINATION share/${PROJECT_NAME})
+# install config launch maps params folder to share
+
+install(DIRECTORY launch/
+    DESTINATION share/${PROJECT_NAME}/launch)
+
+install(DIRECTORY config/
+    DESTINATION share/${PROJECT_NAME}/config)
+
+install(DIRECTORY launch/
+    DESTINATION share/${PROJECT_NAME}/launch)
+
+install(DIRECTORY maps/
+    DESTINATION share/${PROJECT_NAME}/maps)
+
+install(DIRECTORY params/
+    DESTINATION share/${PROJECT_NAME}/params)
+
 
 
 if(BUILD_TESTING)
