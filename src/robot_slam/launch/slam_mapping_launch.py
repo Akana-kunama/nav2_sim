@@ -29,6 +29,27 @@ def ensure_map_directory(context, *args, **kwargs):
 
 
 def generate_launch_description():
+    # display robot and enviornment with robot display
+     # Include the robot_display_launch
+    robot_display_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            os.path.join(
+                FindPackageShare('robot_description').perform(None),
+                'launch',
+                'robot_display_launch.py'
+            )
+        ]),
+        launch_arguments={
+            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            # Add other launch arguments if necessary
+        }.items()
+    )
+
+
+
+
+
+
     # Declare the launch arguments
     slam_params_file = LaunchConfiguration('slam_params_file')
     map_saving_path = LaunchConfiguration('map_saving_path')
@@ -96,6 +117,7 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        robot_display_launch,
         slam_params_file_declare,
         map_saving_path_declare,
         use_sim_time_declare,
