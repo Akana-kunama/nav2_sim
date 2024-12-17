@@ -1,10 +1,17 @@
 import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument, LogInfo, OpaqueFunction
+from launch.actions import (
+    DeclareLaunchArgument,
+    LogInfo,
+    OpaqueFunction,
+    IncludeLaunchDescription,
+    GroupAction,
+)
 from launch.conditions import IfCondition, UnlessCondition
-from launch.substitutions import LaunchConfiguration,PathJoinSubstitution
+from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def ensure_map_directory(context, *args, **kwargs):
