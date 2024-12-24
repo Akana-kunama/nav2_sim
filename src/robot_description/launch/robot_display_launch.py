@@ -20,7 +20,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
     model_path = LaunchConfiguration('model')
     rviz_config_path = LaunchConfiguration('rvizconfig')
-    use_ekf = LaunchConfiguration('use_ekf', default='false') 
+
 
 
     use_sim_time_declare = DeclareLaunchArgument(
@@ -29,12 +29,6 @@ def generate_launch_description():
         description='Use simulation/Gazebo clock'
     )
     
-    # Declare the 'use_ekf' argument
-    use_ekf_declare = DeclareLaunchArgument(
-        'use_ekf',
-        default_value='true',
-        description='Enable or disable the EKF localization node'
-    )
 
 
     model_path_declare= DeclareLaunchArgument(
@@ -69,7 +63,6 @@ def generate_launch_description():
     world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
     urdf_file_path = os.path.join(robot_description_pkg, 'urdf', 'MicroROS.urdf')
     default_rviz_config_path = os.path.join(robot_description_pkg, 'rviz', 'urdf_config.rviz')
-    ekf_config_path = os.path.join(robot_description_pkg, 'config', 'ekf.yaml')
 
     # --------------------------
     # Read the URDF file content
@@ -132,15 +125,6 @@ def generate_launch_description():
         ]
     )
 
-    # Robot Localization (EKF) Node
-    robot_localization_node = Node(
-        package='robot_localization',
-        executable='ekf_node',
-        name='ekf_filter_node',
-        output='screen',
-        parameters=[ekf_config_path, {'use_sim_time': use_sim_time}],
-        condition=IfCondition(use_ekf)
-    )
 
      # -------------------------
     # 4. Launch Gazebo
@@ -162,7 +146,6 @@ def generate_launch_description():
     return LaunchDescription([
         # Declare Launch Arguments
         use_sim_time_declare,
-        use_ekf_declare,
         model_path_declare,
         rviz_config_path_declare,
 
@@ -172,7 +155,7 @@ def generate_launch_description():
         # Nodes
         joint_state_publisher_node,
         robot_state_publisher_node,
-        robot_localization_node,
+        # robot_localization_node,
         spawn_entity,
         rviz_node
     ])

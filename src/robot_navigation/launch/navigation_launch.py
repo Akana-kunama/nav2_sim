@@ -15,7 +15,6 @@ def generate_launch_description():
     # 1. Declare Launch Arguments
     # -------------------------
     use_sim_time = LaunchConfiguration("use_sim_time")
-    use_ekf = LaunchConfiguration('use_ekf')
     map_file = LaunchConfiguration("map_file")
     nav2_params_file = LaunchConfiguration("nav2_params_file")
     log_level = LaunchConfiguration('log_level')
@@ -45,17 +44,13 @@ def generate_launch_description():
         "nav2_params_file",
         default_value=PathJoinSubstitution([
             FindPackageShare("robot_navigation"),
-            "config",
+            "params",
             "nav2_params.yaml"
         ]),
         description="Full path to the Nav2 parameters file to use for the navigation stack"
     )
 
-    declare_use_ekf_cmd = DeclareLaunchArgument(  # New Launch Argument
-        'use_ekf',
-        default_value='false',
-        description='Enable or disable the EKF localization node'
-    )
+
 
 
     declare_log_level_cmd = DeclareLaunchArgument(
@@ -76,7 +71,6 @@ def generate_launch_description():
             ])
         ]),
         launch_arguments={
-            'use_ekf': use_ekf 
             # Add other launch arguments if necessary
         }.items()
     )
@@ -204,7 +198,6 @@ def generate_launch_description():
         declare_use_sim_time_cmd,
         declare_map_file_cmd,
         declare_nav2_params_file_cmd,
-        declare_use_ekf_cmd,
         declare_log_level_cmd,
         # static_tf_map_to_odom,
         nav2_nodes
