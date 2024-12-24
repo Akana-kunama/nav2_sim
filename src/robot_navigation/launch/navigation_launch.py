@@ -3,7 +3,7 @@
 import os
 from launch import LaunchDescription
 from launch_ros.actions import Node
-from launch.actions import DeclareLaunchArgument, LogInfo, IncludeLaunchDescription, OpaqueFunction
+from launch.actions import DeclareLaunchArgument, LogInfo, IncludeLaunchDescription, OpaqueFunction,GroupAction
 from launch.conditions import IfCondition, UnlessCondition
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 from launch_ros.substitutions import FindPackageShare
@@ -11,12 +11,20 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description():
-    # Declare launch arguments
+    # -------------------------
+    # 1. Declare Launch Arguments
+    # -------------------------
     use_sim_time = LaunchConfiguration("use_sim_time")
+    use_ekf = LaunchConfiguration('use_ekf')
     map_file = LaunchConfiguration("map_file")
     nav2_params_file = LaunchConfiguration("nav2_params_file")
+    log_level = LaunchConfiguration('log_level')
 
-    # Declare launch arguments
+    remappings = [('/tf', 'tf'), ('/tf_static', 'tf_static')]
+
+
+
+
     declare_use_sim_time_cmd = DeclareLaunchArgument(
         "use_sim_time",
         default_value="true",  # Set to "true" for simulation
@@ -43,113 +51,161 @@ def generate_launch_description():
         description="Full path to the Nav2 parameters file to use for the navigation stack"
     )
 
-    # Map Server node
-    map_server_node = Node(
-        package="nav2_map_server",
-        executable="map_server",
-        name="map_server",
-        output="screen",
-        parameters=[{"use_sim_time": use_sim_time, "yaml_filename": map_file}],
+    declare_use_ekf_cmd = DeclareLaunchArgument(  # New Launch Argument
+        'use_ekf',
+        default_value='false',
+        description='Enable or disable the EKF localization node'
     )
 
-    # AMCL node
-    amcl_node = Node(
-        package="nav2_amcl",
-        executable="amcl",
-        name="amcl",
-        output="screen",
-        parameters=[nav2_params_file],
+
+    declare_log_level_cmd = DeclareLaunchArgument(
+        'log_level', default_value='info', description='log level'
     )
 
-    # Planner Server node
-    planner_server_node = Node(
-        package="nav2_planner",
-        executable="planner_server",
-        name="planner_server",
-        output="screen",
-        parameters=[nav2_params_file],
+    
+    # -------------------------
+    # 2. Include Robot Display Launch
+    # -------------------------
+
+    robot_display_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([
+            PathJoinSubstitution([
+                FindPackageShare('robot_description'),
+                'launch',
+                'robot_display_launch.py'
+            ])
+        ]),
+        launch_arguments={
+            'use_ekf': use_ekf 
+            # Add other launch arguments if necessary
+        }.items()
     )
 
-    # Controller Server node
-    controller_server_node = Node(
-        package="nav2_controller",
-        executable="controller_server",
-        name="controller_server",
-        output="screen",
-        parameters=[nav2_params_file],
+    # -------------------------------------
+    # 3. Create the Static Transform Publisher node for map -> odom
+    # -------------------------------------
+
+    static_tf_map_to_odom = Node(
+        package='tf2_ros',
+        executable='static_transform_publisher',
+        name='static_tf_map_to_odom',
+        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
     )
 
-    # Behavior Tree Navigator node
-    bt_navigator_node = Node(
-        package="nav2_bt_navigator",
-        executable="bt_navigator",
-        name="bt_navigator",
-        output="screen",
-        parameters=[nav2_params_file],
+    # -------------------------
+    # 4. Define Nav2 Nodes Group
+    # -------------------------
+
+    nav2_nodes = GroupAction(
+         actions=[
+             
+            # Map Server node
+             Node(
+                package="nav2_map_server",
+                executable="map_server",
+                name="map_server",
+                output="screen",
+                parameters=[{"use_sim_time": use_sim_time, "yaml_filename": map_file}],
+            ),
+
+             # AMCL node
+            Node(
+                package="nav2_amcl",
+                executable="amcl",
+                name="amcl",
+                output="screen",
+                parameters=[nav2_params_file],
+            ),
+
+            # Planner Server node
+            Node(
+                package="nav2_planner",
+                executable="planner_server",
+                name="planner_server",
+                output="screen",
+                parameters=[nav2_params_file],
+                arguments=['--ros-args', '--log-level', log_level],
+                remappings=remappings
+            ),
+
+            # Controller Server node
+            Node(
+                package="nav2_controller",
+                executable="controller_server",
+                name="controller_server",
+                output="screen",
+                parameters=[nav2_params_file],
+                arguments=['--ros-args', '--log-level', log_level],
+                remappings=remappings,
+            ),
+
+            # Behavior Server node
+            Node(
+                package='nav2_behaviors',
+                executable='behavior_server',
+                name='behavior_server',
+                output='screen',
+                parameters=[nav2_params_file],
+                arguments=['--ros-args', '--log-level', log_level],
+                remappings=remappings,
+            ),
+
+            # Behavior Tree Navigator node
+            Node(
+                package="nav2_bt_navigator",
+                executable="bt_navigator",
+                name="bt_navigator",
+                output="screen",
+                parameters=[nav2_params_file],
+                arguments=['--ros-args', '--log-level', log_level],
+                remappings=remappings
+            ),
+
+
+            # -----------------------
+            # Lifecycle Manager node
+            # -----------------------
+            Node(
+                package="nav2_lifecycle_manager",
+                executable="lifecycle_manager",
+                name="lifecycle_manager_navigation",
+                output="screen",
+                parameters=[{
+                    "use_sim_time": use_sim_time,
+                    "autostart": True,
+                    "node_names": [
+                        "map_server",
+                        "amcl",
+                        "planner_server",
+                        "controller_server",
+                        "behavior_server",
+                        "bt_navigator",
+                    ],
+                }],
+            ),
+
+            # Log Info
+            LogInfo(msg=["Launching Navigation Stack with map: ", map_file]),
+            LogInfo(msg=["AMCL node started"])
+
+         ]
     )
+    
 
-    # Recoveries Server node
-    # recoveries_server_node = Node(
-    #     package="nav2_recoveries",
-    #     executable="recoveries_server",
-    #     name="recoveries_server",
-    #     output="screen",
-    #     parameters=[nav2_params_file],
-    # )
+    
 
-    # Lifecycle Manager node
-    lifecycle_manager_node = Node(
-        package="nav2_lifecycle_manager",
-        executable="lifecycle_manager",
-        name="lifecycle_manager_navigation",
-        output="screen",
-        parameters=[{
-            "use_sim_time": use_sim_time,
-            "autostart": True,
-            "node_names": [
-                "map_server",
-                "amcl",
-                "planner_server",
-                "controller_server",
-                "bt_navigator",
-                "recoveries_server"
-            ],
-        }],
-    )
 
-    # RViz node (Optional)
-    rviz_config_file = PathJoinSubstitution([
-        FindPackageShare("robot_slam"),
-        "config",
-        "nav2_default_view.rviz"
-    ])
+    
 
-    rviz_node = Node(
-        package="rviz2",
-        executable="rviz2",
-        name="rviz2",
-        output="screen",
-        arguments=["-d", rviz_config_file],
-        parameters=[{"use_sim_time": use_sim_time}],
-    )
-
-    # Log Info
-    log_cmd = LogInfo(
-        msg=["Launching Navigation Stack with map: ", map_file]
-    )
 
     return LaunchDescription([
+        # robot_description_launch,
+        robot_display_launch,
         declare_use_sim_time_cmd,
         declare_map_file_cmd,
         declare_nav2_params_file_cmd,
-        map_server_node,
-        amcl_node,
-        planner_server_node,
-        controller_server_node,
-        bt_navigator_node,
-        # recoveries_server_node,
-        lifecycle_manager_node,
-        # Uncomment the following line to launch RViz automatically
-        # rviz_node,
-        log_cmd
+        declare_use_ekf_cmd,
+        declare_log_level_cmd,
+        # static_tf_map_to_odom,
+        nav2_nodes
     ])

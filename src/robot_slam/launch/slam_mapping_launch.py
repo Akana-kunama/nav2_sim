@@ -33,14 +33,14 @@ def generate_launch_description():
      # Include the robot_display_launch
     robot_display_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource([
-            os.path.join(
-                FindPackageShare('robot_description').perform(None),
+            PathJoinSubstitution([
+                FindPackageShare('robot_description'),
                 'launch',
                 'robot_display_launch.py'
-            )
+            ])
         ]),
         launch_arguments={
-            'use_sim_time': LaunchConfiguration('use_sim_time'),
+            # 'use_sim_time': LaunchConfiguration('use_sim_time'),
             # Add other launch arguments if necessary
         }.items()
     )
@@ -53,7 +53,7 @@ def generate_launch_description():
     # Declare the launch arguments
     slam_params_file = LaunchConfiguration('slam_params_file')
     map_saving_path = LaunchConfiguration('map_saving_path')
-    use_saved_map = LaunchConfiguration('use_saved_map')
+    
 
     # Declare the 'slam_params_file' argument
     slam_params_file_declare = DeclareLaunchArgument(
@@ -82,28 +82,15 @@ def generate_launch_description():
         description='use simulation/Gazebo clock'
     )
 
-    use_saved_map_declare = DeclareLaunchArgument(
-        'use_saved_map',
-        default_value= 'false',
-        description='whether to use a saved the map or not'
-    )
 
 
     # OpaqueFunction to ensure the map saving directory exists
     ensure_map_dir_action = OpaqueFunction(function=ensure_map_directory)
 
     # Create the SLAM Toolbox node
-    slam_toolbox_node_use_saved_map = Node(    # node for saving map
-        condition=IfCondition(use_saved_map),
-        package='slam_toolbox', # node name
-        executable='sync_slam_toolbox_node',
-        name='slam_toolbox',
-        output='screen',
-        parameters=[slam_params_file,{'map_file_name':map_saving_path}]
-    )
 
-    slam_toolbox_node_use_no_saved_map = Node(    # node for not using saved map
-        condition=UnlessCondition(use_saved_map),
+
+    slam_toolbox_node = Node(    # node for not using saved map
         package='slam_toolbox',
         executable='sync_slam_toolbox_node',
         name='slam_toolbox',
@@ -121,10 +108,8 @@ def generate_launch_description():
         slam_params_file_declare,
         map_saving_path_declare,
         use_sim_time_declare,
-        use_saved_map_declare,
         ensure_map_dir_action,
-        slam_toolbox_node_use_saved_map,
-        slam_toolbox_node_use_no_saved_map ,
+        slam_toolbox_node,
         log_slam_params_cmd
     ])
 

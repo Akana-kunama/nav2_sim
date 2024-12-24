@@ -20,7 +20,7 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration('use_sim_time')
     model_path = LaunchConfiguration('model')
     rviz_config_path = LaunchConfiguration('rvizconfig')
-
+    use_ekf = LaunchConfiguration('use_ekf', default='false') 
 
 
     use_sim_time_declare = DeclareLaunchArgument(
@@ -29,6 +29,14 @@ def generate_launch_description():
         description='Use simulation/Gazebo clock'
     )
     
+    # Declare the 'use_ekf' argument
+    use_ekf_declare = DeclareLaunchArgument(
+        'use_ekf',
+        default_value='true',
+        description='Enable or disable the EKF localization node'
+    )
+
+
     model_path_declare= DeclareLaunchArgument(
         'model',
         default_value=os.path.join(
@@ -63,24 +71,12 @@ def generate_launch_description():
     default_rviz_config_path = os.path.join(robot_description_pkg, 'rviz', 'urdf_config.rviz')
     ekf_config_path = os.path.join(robot_description_pkg, 'config', 'ekf.yaml')
 
+    # --------------------------
     # Read the URDF file content
+    # --------------------------
     with open(urdf_file_path, 'r') as urdf_file:
         urdf_content = urdf_file.read()
 
-
-    # Get the path to the package's share directory using get_package_share_directory
-    package_share_directory = get_package_share_directory('robot_description')
-    robot_environment_pkg = get_package_share_directory('robot_environment')
-    world_file = os.path.join(robot_environment_pkg, 'worlds', 'sim_world.world')
-
-
-    # Define the path to the URDF file
-    urdf_file_path = os.path.join(package_share_directory, 'urdf', 'MicroROS.urdf')
-    default_rviz_config_path = os.path.join(package_share_directory, 'rviz/urdf_config.rviz')
-
-    # Read the URDF file content
-    with open(urdf_file_path, 'r') as urdf_file:
-        urdf_content = urdf_file.read()
 
 
     # -------------------------
@@ -109,15 +105,6 @@ def generate_launch_description():
         # condition=UnlessCondition(LaunchConfiguration('gui'))
     )
 
-    # joint_state_publisher_gui_node = Node(
-    #     package='joint_state_publisher_gui',
-    #     executable='joint_state_publisher_gui',
-    #     name='joint_state_publisher_gui',
-    #     output='screen',
-    #     parameters=[{'use_sim_time': use_sim_time}],
-    #     condition=IfCondition(LaunchConfiguration('gui'))
-    # )
-    
     # RViz Node
     rviz_node = Node(
         package='rviz2',
@@ -151,7 +138,8 @@ def generate_launch_description():
         executable='ekf_node',
         name='ekf_filter_node',
         output='screen',
-        parameters=[ekf_config_path, {'use_sim_time': use_sim_time}]
+        parameters=[ekf_config_path, {'use_sim_time': use_sim_time}],
+        condition=IfCondition(use_ekf)
     )
 
      # -------------------------
@@ -168,12 +156,13 @@ def generate_launch_description():
         output='screen'
     )
 
-  # -------------------------
+    # -------------------------
     # 5. Assemble Launch Description
     # -------------------------
     return LaunchDescription([
         # Declare Launch Arguments
         use_sim_time_declare,
+        use_ekf_declare,
         model_path_declare,
         rviz_config_path_declare,
 
@@ -182,7 +171,6 @@ def generate_launch_description():
 
         # Nodes
         joint_state_publisher_node,
-        # joint_state_publisher_gui_node,  # Uncomment if GUI is needed
         robot_state_publisher_node,
         robot_localization_node,
         spawn_entity,
