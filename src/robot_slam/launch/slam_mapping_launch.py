@@ -46,10 +46,6 @@ def generate_launch_description():
     )
 
 
-
-
-
-
     # Declare the launch arguments
     slam_params_file = LaunchConfiguration('slam_params_file')
     map_saving_path = LaunchConfiguration('map_saving_path')
