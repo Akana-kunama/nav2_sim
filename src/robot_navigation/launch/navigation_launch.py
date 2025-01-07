@@ -75,16 +75,6 @@ def generate_launch_description():
         }.items()
     )
 
-    # -------------------------------------
-    # 3. Create the Static Transform Publisher node for map -> odom
-    # -------------------------------------
-
-    static_tf_map_to_odom = Node(
-        package='tf2_ros',
-        executable='static_transform_publisher',
-        name='static_tf_map_to_odom',
-        arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
-    )
 
     # -------------------------
     # 4. Define Nav2 Nodes Group
@@ -199,6 +189,5 @@ def generate_launch_description():
         declare_map_file_cmd,
         declare_nav2_params_file_cmd,
         declare_log_level_cmd,
-        # static_tf_map_to_odom,
         nav2_nodes
     ])
