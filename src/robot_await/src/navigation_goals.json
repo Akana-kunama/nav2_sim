@@ -1,0 +1,12 @@
+{
+    "Home": {
+        "x": 0.0,
+        "y": 0.0,
+        "orientation_w": 1.0
+    },
+    "Office": {
+        "x": 2.0,
+        "y": 3.0,
+        "orientation_w": 1.0
+    }
+}

@@ -1,0 +1,10 @@
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/uninstall.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/robot_await_uninstall.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/robot_await.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/test.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/edit_cache.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/rebuild_cache.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/list_install_components.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/install.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/install/local.dir
+/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await/CMakeFiles/install/strip.dir

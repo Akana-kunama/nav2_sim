@@ -1,0 +1,4 @@
+source;share/custom_command/environment/ament_prefix_path.sh
+source;share/custom_command/environment/library_path.sh
+source;share/custom_command/environment/path.sh
+source;share/custom_command/environment/pythonpath.sh
