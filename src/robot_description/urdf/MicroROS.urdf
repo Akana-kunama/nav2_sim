@@ -25,7 +25,8 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/base_link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/base_link.STL" />
+        
       </geometry>
       <material
         name="">
@@ -37,7 +38,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/base_link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/base_link.STL" />
       </geometry>
     </collision>
   </link>
@@ -67,7 +68,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zq_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/zq_Link.STL" />
       </geometry>
       <material
         name="">
@@ -79,7 +80,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zq_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/zq_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -115,7 +116,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yq_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/yq_Link.STL" />
       </geometry>
       <material
         name="">
@@ -125,7 +126,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yq_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/yq_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -157,7 +158,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yh_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/yh_Link.STL" />
       </geometry>
       <material
         name="">
@@ -169,7 +170,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/yh_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/yh_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -203,7 +204,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zh_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/zh_Link.STL" />
       </geometry>
       <material
         name="">
@@ -215,7 +216,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/zh_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/zh_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -293,7 +294,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/imu_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/imu_Link.STL" />
       </geometry>
       <material
         name="">
@@ -305,7 +306,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/imu_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/imu_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -417,7 +418,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/radar_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/radar_Link.STL" />
       </geometry>
       <material
         name="">
@@ -427,7 +428,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/radar_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/radar_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -507,7 +508,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/jq1_Link.STL" />
+          filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/jq1_Link.STL" />
       </geometry>
       <material
         name="">
@@ -521,7 +522,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/jq1_Link.STL" />
+          filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/jq1_Link.STL" />
       </geometry>
     </collision>
   </link>
@@ -569,7 +570,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/jq2_Link.STL" />
+          filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/jq2_Link.STL" />
       </geometry>
       <material
         name="">
@@ -581,7 +582,7 @@
         xyz="0 0 0"
         rpy="0 0 0" />
       <geometry>
-        <mesh filename="file:///home/kunama/PLCT/NAV2/nav2_sim/src/robot_description/meshes/jq2_Link.STL" />
+        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/MicroROS/jq2_Link.STL" />
       </geometry>
     </collision>
   </link>

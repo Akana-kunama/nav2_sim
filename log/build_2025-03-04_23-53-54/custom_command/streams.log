@@ -1,0 +1,163 @@
+[0.017s] Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/custom_command -DCMAKE_INSTALL_PREFIX=/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command
+[0.044s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.181s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.198s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.210s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.218s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.556s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.782s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.069s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.093s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.133s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.133s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.133s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.166s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.176s] -- Added test 'lint_cmake' to check CMake code style
+[1.177s] -- Added test 'xmllint' to check XML markup files
+[1.179s] -- Configuring done
+[1.208s] -- Generating done
+[1.218s] -- Build files have been written to: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command
+[1.226s] Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/custom_command -DCMAKE_INSTALL_PREFIX=/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command
+[1.230s] Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command -- -j12 -l12
+[1.277s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_generator_c[0m
+[1.289s] [  3%] Built target custom_command__cpp
+[1.290s] [ 12%] Built target custom_command__rosidl_generator_c
+[1.297s] [ 12%] Built target ament_cmake_python_symlink_custom_command
+[1.302s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_cpp[0m
+[1.302s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_c[0m
+[1.303s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_introspection_cpp[0m
+[1.303s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_fastrtps_cpp[0m
+[1.304s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_introspection_c[0m
+[1.304s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_fastrtps_c[0m
+[1.319s] [ 22%] Built target custom_command__rosidl_typesupport_c
+[1.319s] [ 32%] Built target custom_command__rosidl_typesupport_cpp
+[1.321s] [ 48%] Built target custom_command__rosidl_typesupport_introspection_cpp
+[1.321s] [ 51%] Built target custom_command__rosidl_typesupport_introspection_c
+[1.322s] [ 61%] Built target custom_command__rosidl_typesupport_fastrtps_c
+[1.322s] [ 70%] Built target custom_command__rosidl_typesupport_fastrtps_cpp
+[1.348s] [ 70%] Built target custom_command
+[1.373s] [ 74%] Built target custom_command__py
+[1.387s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_generator_py[0m
+[1.403s] [ 80%] Built target custom_command__rosidl_generator_py
+[1.416s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_introspection_c__pyext[0m
+[1.416s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.419s] [35m[1mConsolidate compiler generated dependencies of target custom_command__rosidl_typesupport_c__pyext[0m
+[1.431s] [ 93%] Built target custom_command__rosidl_typesupport_fastrtps_c__pyext
+[1.431s] [ 93%] Built target custom_command__rosidl_typesupport_introspection_c__pyext
+[1.444s] [100%] Built target custom_command__rosidl_typesupport_c__pyext
+[1.551s] running egg_info
+[1.552s] writing custom_command.egg-info/PKG-INFO
+[1.552s] writing dependency_links to custom_command.egg-info/dependency_links.txt
+[1.552s] writing top-level names to custom_command.egg-info/top_level.txt
+[1.554s] reading manifest file 'custom_command.egg-info/SOURCES.txt'
+[1.555s] writing manifest file 'custom_command.egg-info/SOURCES.txt'
+[1.596s] [100%] Built target ament_cmake_python_build_custom_command_egg
+[1.611s] Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command -- -j12 -l12
+[1.634s] Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command
+[1.645s] -- Install configuration: ""
+[1.646s] -- Execute custom install script
+[1.647s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/ament_index/resource_index/rosidl_interfaces/custom_command
+[1.658s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/command.h
+[1.669s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__functions.h
+[1.680s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__struct.h
+[1.690s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__type_support.h
+[1.701s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/rosidl_generator_c__visibility_control.h
+[1.722s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/library_path.sh
+[1.741s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/library_path.dsv
+[1.752s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__rosidl_typesupport_fastrtps_c.h
+[1.763s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.781s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__rosidl_typesupport_introspection_c.h
+[1.792s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.803s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/command.hpp
+[1.813s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__builder.hpp
+[1.824s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__struct.hpp
+[1.836s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__traits.hpp
+[1.856s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__type_support.hpp
+[1.867s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.879s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__rosidl_typesupport_fastrtps_cpp.hpp
+[1.889s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.901s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/include/custom_command/custom_command/msg/detail/command__rosidl_typesupport_introspection_cpp.hpp
+[1.911s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/pythonpath.sh
+[1.926s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/pythonpath.dsv
+[1.948s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command-0.0.0-py3.10.egg-info/PKG-INFO
+[1.959s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command-0.0.0-py3.10.egg-info/SOURCES.txt
+[1.969s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command-0.0.0-py3.10.egg-info/dependency_links.txt
+[1.980s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command-0.0.0-py3.10.egg-info/top_level.txt
+[1.991s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/__init__.py
+[2.001s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/_custom_command_s.ep.rosidl_typesupport_c.c
+[2.025s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/_custom_command_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.037s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/_custom_command_s.ep.rosidl_typesupport_introspection_c.c
+[2.049s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/custom_command_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.062s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/custom_command_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.073s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/custom_command_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.084s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/libcustom_command__rosidl_generator_py.so
+[2.103s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/msg/__init__.py
+[2.125s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/msg/_command.py
+[2.147s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/msg/_command_s.c
+[2.163s] -- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/custom_command_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.164s] -- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/custom_command_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.165s] -- Up-to-date symlink: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/custom_command_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.165s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/msg/Command.idl
+[2.178s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/msg/Command.msg
+[2.190s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/ament_index/resource_index/package_run_dependencies/custom_command
+[2.202s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/ament_index/resource_index/parent_prefix_path/custom_command
+[2.214s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/ament_prefix_path.sh
+[2.235s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/ament_prefix_path.dsv
+[2.247s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/path.sh
+[2.259s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/environment/path.dsv
+[2.280s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/local_setup.bash
+[2.291s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/local_setup.sh
+[2.303s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/local_setup.zsh
+[2.315s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/local_setup.dsv
+[2.339s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.dsv
+[2.359s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/ament_index/resource_index/packages/custom_command
+[2.380s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/rosidl_cmake-extras.cmake
+[2.392s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.403s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/ament_cmake_export_libraries-extras.cmake
+[2.415s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/ament_cmake_export_targets-extras.cmake
+[2.437s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.459s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.470s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.493s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_commandConfig.cmake
+[2.511s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_commandConfig-version.cmake
+[2.523s] -- Symlinking: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.xml
+[2.535s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_generator_c.so
+[2.536s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_generator_c.so" to ""
+[2.537s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_fastrtps_c.so
+[2.538s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_fastrtps_c.so" to ""
+[2.538s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_introspection_c.so
+[2.539s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_introspection_c.so" to ""
+[2.539s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_c.so
+[2.540s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_c.so" to ""
+[2.540s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_fastrtps_cpp.so
+[2.541s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.542s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_introspection_cpp.so
+[2.543s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_introspection_cpp.so" to ""
+[2.543s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_cpp.so
+[2.544s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_typesupport_cpp.so" to ""
+[2.580s] Listing '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command'...
+[2.581s] Compiling '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/__init__.py'...
+[2.581s] Listing '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/msg'...
+[2.581s] Compiling '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/msg/__init__.py'...
+[2.581s] Compiling '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/local/lib/python3.10/dist-packages/custom_command/msg/_command.py'...
+[2.585s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_generator_py.so
+[2.586s] -- Set runtime path of "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/libcustom_command__rosidl_generator_py.so" to ""
+[2.586s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_generator_cExport.cmake
+[2.587s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_generator_cExport-noconfig.cmake
+[2.587s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_typesupport_fastrtps_cExport.cmake
+[2.587s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.587s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_introspection_cExport.cmake
+[2.588s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.588s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_cExport.cmake
+[2.589s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_cExport-noconfig.cmake
+[2.589s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_generator_cppExport.cmake
+[2.589s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.590s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.590s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_introspection_cppExport.cmake
+[2.591s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.591s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_cppExport.cmake
+[2.591s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/custom_command__rosidl_typesupport_cppExport-noconfig.cmake
+[2.592s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_generator_pyExport.cmake
+[2.592s] -- Installing: /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/cmake/export_custom_command__rosidl_generator_pyExport-noconfig.cmake
+[2.598s] Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command

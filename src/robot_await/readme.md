@@ -18,13 +18,13 @@ description :  a package that  turns Encapsulated command to topic
 
 ## `robot_await_launch.py`
 
-
+启动节点 `robot_await_node` 
 
 
 
 ## `robot_await_node.cpp`
 
-
+讲语义命令转换成 `ros2` 的相关指令，`message` 格式存放在 `custom_command`中
 
 接口说明
 
@@ -80,7 +80,7 @@ description :  a package that  turns Encapsulated command to topic
 
   + `brief` 
 
-    控制机器人左转/右转指定的角度。
+    控制机器人到行至特定的位置，所有位置预先留存在 `navigation_goals.json`中。
 
   + `param` 
 
@@ -99,18 +99,18 @@ ros2 launch robot_await robot_await_launch.py
 前行测试 ：
 
 ```bash
-ros2 topic pub /command_topic custom_msgs/msg/Command "{name: 'MoveForward', parameters: ['2.0', '0.5']}"
+ros2 topic pub /command_topic custom_command/msg/Command "{name: 'MoveForward', parameters: ['2.0', '0.5']}"
 ```
 
-转弯测试 ：
+转弯测试 ：+
 
 ```bash
-ros2 topic pub /command_topic custom_msgs/msg/Command "{name: 'TurnLeft', parameters: ['90.0']}"
+ros2 topic pub /command_topic custom_command/msg/Command "{name: 'TurnLeft', parameters: ['90.0']}"
 ```
 
 定点导航测试：
 
 ```bash
-ros2 topic pub /command_topic custom_msgs/msg/Command "{name: 'NavigateTo', parameters: ['Home']}"
+ros2 topic pub /command_topic custom_command/msg/Command "{name: 'NavigateTo', parameters: ['Home']}"
 ```
 

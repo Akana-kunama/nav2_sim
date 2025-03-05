@@ -194,7 +194,7 @@ void RobotAwait::navigate_to(const std::string& position_name)
 void RobotAwait::send_navigation_goal(const std::string& position_name)
 {
     // 加载 JSON 文件
-    std::ifstream input_file("navigation_goals.json");
+    std::ifstream input_file("/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_await/src/navigation_goals.json");
     if (!input_file.is_open())
     {
         RCLCPP_ERROR(this->get_logger(), "Failed to open navigation goals JSON file");
@@ -225,35 +225,38 @@ void RobotAwait::send_navigation_goal(const std::string& position_name)
     }
 
     // 创建目标位置
-    auto goal_msg = NavigateToPose::Goal();
-    goal_msg.pose.header.stamp = this->now();
-    goal_msg.pose.header.frame_id = "map";  // 假设目标位置在 map 坐标系中
+    auto goal_msg = nav2_msgs::action::NavigateToPose::Goal();
+    
+    // 设置目标时间戳为当前时间
+    goal_msg.pose.header.stamp.sec = this->now().seconds();   // 获取当前秒
+    goal_msg.pose.header.stamp.nanosec = this->now().nanoseconds();  // 获取当前纳秒
+    goal_msg.pose.header.frame_id = "map";  // 坐标系设置为 'map'
 
-    // 设置目标位置
+    // 设置目标位置和朝向
     goal_msg.pose.pose.position.x = x;
     goal_msg.pose.pose.position.y = y;
     goal_msg.pose.pose.orientation.w = orientation_w;
 
     // 发送目标
-    auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
+    auto send_goal_options = rclcpp_action::Client<nav2_msgs::action::NavigateToPose>::SendGoalOptions();
     send_goal_options.goal_response_callback =
         [this](const GoalHandleNavigateToPose::SharedPtr& goal_handle)
-    {
-        if (!goal_handle)
         {
-            RCLCPP_ERROR(this->get_logger(), "Goal was rejected by server");
-        }
-        else
-        {
-            RCLCPP_INFO(this->get_logger(), "Goal accepted by server, waiting for result");
-        }
-    };
+            if (!goal_handle)
+            {
+                RCLCPP_ERROR(this->get_logger(), "Goal was rejected by server");
+            }
+            else
+            {
+                RCLCPP_INFO(this->get_logger(), "Goal accepted by server, waiting for result");
+            }
+        };
 
     send_goal_options.result_callback =
         [this](const GoalHandleNavigateToPose::WrappedResult& result)
-    {
-        switch (result.code)
         {
+            switch (result.code)
+            {
             case rclcpp_action::ResultCode::SUCCEEDED:
                 RCLCPP_INFO(this->get_logger(), "Navigation succeeded!");
                 break;
@@ -266,8 +269,8 @@ void RobotAwait::send_navigation_goal(const std::string& position_name)
             default:
                 RCLCPP_ERROR(this->get_logger(), "Unknown result code");
                 break;
-        }
-    };
+            }
+        };
 
     navigation_client_->async_send_goal(goal_msg, send_goal_options);
 }

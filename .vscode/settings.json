@@ -1,3 +1,17 @@
 {
-    "cmake.sourceDirectory": "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_control"
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "C_Cpp.default.includePath": [
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+    ],
+    "clangd.arguments": [
+        "--query-driver=/usr/bin/g++*"
+      ],
+    "cmake.configureSettings": {
+        "CMAKE_PREFIX_PATH": "/opt/ros/humble", // ROS 2 安装路径
+        "AMENT_PREFIX_PATH": "/opt/ros/humble", // AMENT 工具链路径
+        "ROS_DISTRO": "humble", // ROS 2 发行版
+        "CMAKE_CXX_STANDARD": "17" // 确保使用 C++17
+    },
+    "cmake.ignoreCMakeListsMissing": true
 }

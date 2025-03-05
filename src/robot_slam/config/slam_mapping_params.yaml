@@ -5,7 +5,7 @@ slam_toolbox:
 
     # SLAM Toolbox Parameters
     mode: "mapping"  # Must be set to "mapping" for SLAM mode
-
+    scan_queue_size: 100
     # Frame Parameters
     map_frame: "map"          # Frame ID for the map
     odom_frame: "odom"        # Frame ID for odometry
@@ -27,7 +27,7 @@ slam_toolbox:
     publish_map: true           # Publish the map to the /map topic
     publish_pose: true          # Publish the robot's pose
     save_map_timeout: 0.0       # Save the map immediately when requested
-    map_update_interval: 0.1   # Seconds between map updates
+    map_update_interval: 0.1    # Seconds between map updates
 
     # Occupancy Grid Parameters
     occupancy_threshold: 0.65
@@ -50,3 +50,6 @@ slam_toolbox:
     log_info: true
     log_warn: true
     log_error: true
+
+    # tf_buffer_duration: 30.0    # 秒，示例值
+    # transform_timeout: 10.0      # 秒，示例值

@@ -1,0 +1,664 @@
+[0.116s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.116s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x74a3f32903d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x74a3f33a52d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x74a3f33a52d0>>, mixin_verb=('build',))
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.292s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.293s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'ros'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models) by extension 'python_setup_py'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_Museum/meshes) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/scripts) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_groundplane/materials/textures) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ISCAS_ENV/models/ISCAS_post/meshes) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extensions ['colcon_pkg']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extension 'colcon_pkg'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extensions ['colcon_meta']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_command) by extension 'ros'
+[0.325s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_command' with type 'ros.ament_cmake' and name 'custom_command'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_await) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_await' with type 'ros.ament_cmake' and name 'robot_await'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_control) by extension 'ros'
+[0.327s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_control' with type 'ros.ament_cmake' and name 'robot_control'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[0.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_cmake' and name 'robot_description'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_environment) by extension 'ros'
+[0.329s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_environment' with type 'ros.ament_cmake' and name 'robot_environment'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_navigation) by extension 'ros'
+[0.330s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_navigation' with type 'ros.ament_cmake' and name 'robot_navigation'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extensions ['ignore', 'ignore_ament_install']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extension 'ignore'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extension 'ignore_ament_install'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extensions ['colcon_pkg']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extension 'colcon_pkg'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extensions ['colcon_meta']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extension 'colcon_meta'
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extensions ['ros']
+[0.330s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_slam) by extension 'ros'
+[0.331s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_slam' with type 'ros.ament_cmake' and name 'robot_slam'
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.352s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install
+[0.353s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 15 installed packages in /home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install
+[0.355s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 423 installed packages in /opt/ros/humble
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'cmake_args' from command line to 'None'
+[0.404s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'cmake_target' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'cmake_clean_cache' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'cmake_clean_first' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'cmake_force_configure' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'ament_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'catkin_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'custom_command' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.405s] DEBUG:colcon.colcon_core.verb:Building package 'custom_command' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/custom_command', 'symlink_install': True, 'test_result_base': None}
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'cmake_target' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'cmake_clean_cache' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'cmake_clean_first' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'cmake_force_configure' from command line to 'False'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'ament_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'catkin_cmake_args' from command line to 'None'
+[0.405s] Level 5:colcon.colcon_core.verb:set package 'robot_await' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.405s] DEBUG:colcon.colcon_core.verb:Building package 'robot_await' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_await', 'symlink_install': True, 'test_result_base': None}
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_target' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.406s] DEBUG:colcon.colcon_core.verb:Building package 'robot_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_control', 'symlink_install': True, 'test_result_base': None}
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.406s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.406s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description', 'symlink_install': True, 'test_result_base': None}
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'cmake_args' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'cmake_target' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'cmake_clean_cache' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'cmake_clean_first' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'cmake_force_configure' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'ament_cmake_args' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'catkin_cmake_args' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_environment' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.407s] DEBUG:colcon.colcon_core.verb:Building package 'robot_environment' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_environment', 'symlink_install': True, 'test_result_base': None}
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_args' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.407s] DEBUG:colcon.colcon_core.verb:Building package 'robot_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_navigation', 'symlink_install': True, 'test_result_base': None}
+[0.407s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'cmake_args' from command line to 'None'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'cmake_target' from command line to 'None'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'cmake_clean_first' from command line to 'False'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'cmake_force_configure' from command line to 'False'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'ament_cmake_args' from command line to 'None'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.408s] Level 5:colcon.colcon_core.verb:set package 'robot_slam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.408s] DEBUG:colcon.colcon_core.verb:Building package 'robot_slam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam', 'merge_install': False, 'path': '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_slam', 'symlink_install': True, 'test_result_base': None}
+[0.408s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.409s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.409s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/custom_command' with build type 'ament_cmake'
+[0.409s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/custom_command'
+[0.412s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.412s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.418s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_await' with build type 'ament_cmake'
+[0.418s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_await'
+[0.418s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.418s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.424s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_control' with build type 'ament_cmake'
+[0.424s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_control'
+[0.425s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.425s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.430s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description' with build type 'ament_cmake'
+[0.430s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description'
+[0.430s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.436s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_environment' with build type 'ament_cmake'
+[0.436s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_environment'
+[0.437s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.437s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.443s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_navigation' with build type 'ament_cmake'
+[0.443s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_navigation'
+[0.443s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.443s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.450s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_slam' with build type 'ament_cmake'
+[0.450s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_slam'
+[0.450s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.450s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command -- -j12 -l12
+[0.468s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await -- -j12 -l12
+[0.472s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control -- -j12 -l12
+[0.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description -- -j12 -l12
+[0.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment -- -j12 -l12
+[0.488s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation -- -j12 -l12
+[0.494s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam -- -j12 -l12
+[0.524s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control -- -j12 -l12
+[0.541s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control
+[0.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment -- -j12 -l12
+[0.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment
+[0.546s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description -- -j12 -l12
+[0.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description
+[0.552s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation -- -j12 -l12
+[0.557s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation
+[0.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam -- -j12 -l12
+[0.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam
+[0.591s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_control)
+[0.597s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await -- -j12 -l12
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await
+[0.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_control
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control' for CMake module files
+[0.610s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control' for CMake config files
+[0.611s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'cmake_prefix_path')
+[0.611s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/hook/cmake_prefix_path.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/hook/cmake_prefix_path.dsv'
+[0.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/hook/cmake_prefix_path.sh'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/bin'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/lib/pkgconfig/robot_control.pc'
+[0.613s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/lib/python3.10/site-packages'
+[0.614s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/bin'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.ps1'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.dsv'
+[0.615s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.sh'
+[0.616s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.bash'
+[0.617s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.zsh'
+[0.618s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/colcon-core/packages/robot_control)
+[0.619s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_control)
+[0.619s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control' for CMake module files
+[0.620s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control' for CMake config files
+[0.620s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_control', 'cmake_prefix_path')
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/hook/cmake_prefix_path.ps1'
+[0.620s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/hook/cmake_prefix_path.dsv'
+[0.621s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/hook/cmake_prefix_path.sh'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/bin'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/lib/pkgconfig/robot_control.pc'
+[0.621s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/lib/python3.10/site-packages'
+[0.622s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/bin'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.ps1'
+[0.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.dsv'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.sh'
+[0.623s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.bash'
+[0.624s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/robot_control/package.zsh'
+[0.624s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_control/share/colcon-core/packages/robot_control)
+[0.626s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_environment)
+[0.626s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment' for CMake module files
+[0.627s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_environment
+[0.627s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment' for CMake config files
+[0.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_environment', 'cmake_prefix_path')
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/hook/cmake_prefix_path.ps1'
+[0.628s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/hook/cmake_prefix_path.dsv'
+[0.629s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/hook/cmake_prefix_path.sh'
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/bin'
+[0.629s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/lib/pkgconfig/robot_environment.pc'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/lib/python3.10/site-packages'
+[0.630s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/bin'
+[0.630s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.ps1'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.dsv'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.sh'
+[0.631s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.bash'
+[0.632s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.zsh'
+[0.632s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/colcon-core/packages/robot_environment)
+[0.633s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_environment)
+[0.633s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment' for CMake module files
+[0.634s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment' for CMake config files
+[0.634s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_environment', 'cmake_prefix_path')
+[0.634s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/hook/cmake_prefix_path.ps1'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/hook/cmake_prefix_path.dsv'
+[0.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/hook/cmake_prefix_path.sh'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/bin'
+[0.636s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/lib/pkgconfig/robot_environment.pc'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/lib/python3.10/site-packages'
+[0.637s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/bin'
+[0.637s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.ps1'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.dsv'
+[0.638s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.sh'
+[0.639s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.bash'
+[0.640s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/robot_environment/package.zsh'
+[0.640s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_environment/share/colcon-core/packages/robot_environment)
+[0.641s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[0.642s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description' for CMake module files
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_description
+[0.643s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description' for CMake config files
+[0.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[0.645s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[0.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[0.646s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/bin'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/lib/pkgconfig/robot_description.pc'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/lib/python3.10/site-packages'
+[0.647s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/bin'
+[0.647s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.ps1'
+[0.648s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.dsv'
+[0.649s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.sh'
+[0.650s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.bash'
+[0.651s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.zsh'
+[0.651s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/colcon-core/packages/robot_description)
+[0.652s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[0.653s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description' for CMake module files
+[0.653s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description' for CMake config files
+[0.654s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'cmake_prefix_path')
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/hook/cmake_prefix_path.ps1'
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/hook/cmake_prefix_path.dsv'
+[0.656s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/hook/cmake_prefix_path.sh'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/bin'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/lib/pkgconfig/robot_description.pc'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/lib/python3.10/site-packages'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/bin'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.ps1'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.dsv'
+[0.659s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.sh'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.bash'
+[0.661s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/robot_description/package.zsh'
+[0.661s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_description/share/colcon-core/packages/robot_description)
+[0.661s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_slam)
+[0.662s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam' for CMake module files
+[0.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_slam
+[0.663s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam' for CMake config files
+[0.664s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_slam', 'cmake_prefix_path')
+[0.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/hook/cmake_prefix_path.ps1'
+[0.665s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/hook/cmake_prefix_path.dsv'
+[0.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/hook/cmake_prefix_path.sh'
+[0.666s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/bin'
+[0.666s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/lib/pkgconfig/robot_slam.pc'
+[0.666s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/lib/python3.10/site-packages'
+[0.667s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/bin'
+[0.667s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.ps1'
+[0.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.dsv'
+[0.669s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.sh'
+[0.670s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.bash'
+[0.671s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.zsh'
+[0.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/colcon-core/packages/robot_slam)
+[0.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_slam)
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam' for CMake module files
+[0.672s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam' for CMake config files
+[0.673s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_slam', 'cmake_prefix_path')
+[0.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/hook/cmake_prefix_path.ps1'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/hook/cmake_prefix_path.dsv'
+[0.674s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/hook/cmake_prefix_path.sh'
+[0.675s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/bin'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/lib/pkgconfig/robot_slam.pc'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/lib/python3.10/site-packages'
+[0.676s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/bin'
+[0.676s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.ps1'
+[0.677s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.dsv'
+[0.678s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.sh'
+[0.678s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.bash'
+[0.679s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/robot_slam/package.zsh'
+[0.679s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_slam/share/colcon-core/packages/robot_slam)
+[0.679s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_navigation)
+[0.680s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation' for CMake module files
+[0.681s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_navigation
+[0.681s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation' for CMake config files
+[0.682s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'cmake_prefix_path')
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.ps1'
+[0.682s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.dsv'
+[0.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.sh'
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/bin'
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/lib/pkgconfig/robot_navigation.pc'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/lib/python3.10/site-packages'
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/bin'
+[0.684s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.ps1'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.dsv'
+[0.685s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.sh'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.bash'
+[0.686s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.zsh'
+[0.687s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/colcon-core/packages/robot_navigation)
+[0.687s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_navigation)
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation' for CMake module files
+[0.688s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation' for CMake config files
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_navigation', 'cmake_prefix_path')
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/hook/cmake_prefix_path.sh'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/bin'
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/lib/pkgconfig/robot_navigation.pc'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/lib/python3.10/site-packages'
+[0.691s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/bin'
+[0.691s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.ps1'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.dsv'
+[0.692s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.sh'
+[0.693s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.bash'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/robot_navigation/package.zsh'
+[0.695s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_navigation/share/colcon-core/packages/robot_navigation)
+[0.695s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_await)
+[0.695s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await' for CMake module files
+[0.697s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/robot_await
+[0.697s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await' for CMake config files
+[0.697s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_await', 'cmake_prefix_path')
+[0.698s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/hook/cmake_prefix_path.ps1'
+[0.699s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/hook/cmake_prefix_path.dsv'
+[0.700s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/hook/cmake_prefix_path.sh'
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/lib'
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/bin'
+[0.701s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/lib/pkgconfig/robot_await.pc'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/lib/python3.10/site-packages'
+[0.702s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/bin'
+[0.702s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.ps1'
+[0.703s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.dsv'
+[0.704s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.sh'
+[0.705s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.bash'
+[0.706s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.zsh'
+[0.706s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/colcon-core/packages/robot_await)
+[0.708s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_await)
+[0.708s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await' for CMake module files
+[0.709s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await' for CMake config files
+[0.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_await', 'cmake_prefix_path')
+[0.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/hook/cmake_prefix_path.ps1'
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/hook/cmake_prefix_path.dsv'
+[0.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/hook/cmake_prefix_path.sh'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/lib'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/bin'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/lib/pkgconfig/robot_await.pc'
+[0.712s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/lib/python3.10/site-packages'
+[0.713s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/bin'
+[0.713s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.ps1'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.dsv'
+[0.714s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.sh'
+[0.715s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.bash'
+[0.716s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/robot_await/package.zsh'
+[0.717s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/robot_await/share/colcon-core/packages/robot_await)
+[0.936s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --build /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command -- -j12 -l12
+[0.939s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command
+[1.026s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_command)
+[1.026s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command' for CMake module files
+[1.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_nav:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_description:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_ctrl:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboomcar_bringup:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/yahboom_app_save_map:/home/kunama/PLCT/NAV2/yahboom_src_code/slam_ws_src/install/laserscan_to_point_publisher:/opt/ros/humble /usr/bin/cmake --install /mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command
+[1.029s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command' for CMake config files
+[1.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_command', 'cmake_prefix_path')
+[1.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/cmake_prefix_path.ps1'
+[1.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/cmake_prefix_path.dsv'
+[1.033s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/cmake_prefix_path.sh'
+[1.034s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib'
+[1.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_command', 'ld_library_path_lib')
+[1.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/ld_library_path_lib.ps1'
+[1.035s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/ld_library_path_lib.dsv'
+[1.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/ld_library_path_lib.sh'
+[1.037s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/bin'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/pkgconfig/custom_command.pc'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/python3.10/site-packages'
+[1.038s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/bin'
+[1.039s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.ps1'
+[1.040s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.dsv'
+[1.041s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.sh'
+[1.042s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.bash'
+[1.043s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.zsh'
+[1.043s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/colcon-core/packages/custom_command)
+[1.045s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_command)
+[1.045s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command' for CMake module files
+[1.046s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command' for CMake config files
+[1.048s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_command', 'cmake_prefix_path')
+[1.048s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/cmake_prefix_path.ps1'
+[1.049s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/cmake_prefix_path.dsv'
+[1.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/cmake_prefix_path.sh'
+[1.051s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib'
+[1.051s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_command', 'ld_library_path_lib')
+[1.051s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/ld_library_path_lib.ps1'
+[1.052s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/ld_library_path_lib.dsv'
+[1.053s] INFO:colcon.colcon_core.shell:Creating environment hook '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/hook/ld_library_path_lib.sh'
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/bin'
+[1.053s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/pkgconfig/custom_command.pc'
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/lib/python3.10/site-packages'
+[1.054s] Level 1:colcon.colcon_core.environment:checking '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/bin'
+[1.055s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.ps1'
+[1.056s] INFO:colcon.colcon_core.shell:Creating package descriptor '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.dsv'
+[1.057s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.sh'
+[1.058s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.bash'
+[1.059s] INFO:colcon.colcon_core.shell:Creating package script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/custom_command/package.zsh'
+[1.060s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/custom_command/share/colcon-core/packages/custom_command)
+[1.061s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.062s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.062s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.073s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.073s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.094s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.094s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/local_setup.ps1'
+[1.095s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/_local_setup_util_ps1.py'
+[1.096s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/setup.ps1'
+[1.098s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/local_setup.sh'
+[1.099s] INFO:colcon.colcon_core.shell:Creating prefix util module '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/_local_setup_util_sh.py'
+[1.099s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/setup.sh'
+[1.101s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/local_setup.bash'
+[1.101s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/setup.bash'
+[1.103s] INFO:colcon.colcon_core.shell:Creating prefix script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/local_setup.zsh'
+[1.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/install/setup.zsh'
