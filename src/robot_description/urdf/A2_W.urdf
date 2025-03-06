@@ -405,7 +405,7 @@
     <axis xyz="0.0 0.0 1.0" />
     <limit effort="1000.0" lower="-0.285" upper="0.285" velocity="0.5" />
   </joint>
-  <joint name="idx10_waist_joint" type="revolute">
+  <joint name="idx10_waist_joint" type="fixed">
     <parent link="body_link1" />
     <child link="body_link2" />
     <origin rpy="-1.5707963 -0.0 0.0" xyz="0.1395 0.0 0.015" />
