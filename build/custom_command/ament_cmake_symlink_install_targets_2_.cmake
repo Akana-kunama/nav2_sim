@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command/rosidl_generator_py/custom_command/custom_command_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "custom_command__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/custom_command")

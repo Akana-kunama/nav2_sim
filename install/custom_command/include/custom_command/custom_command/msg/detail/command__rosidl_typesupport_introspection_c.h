@@ -1,1 +1,0 @@
-/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/build/custom_command/rosidl_typesupport_introspection_c/custom_command/msg/detail/command__rosidl_typesupport_introspection_c.h

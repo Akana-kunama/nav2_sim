@@ -1,6 +1,0 @@
-{
-  "package_name": "custom_command",
-  "non_idl_tuples": [
-    "/mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/custom_command:msg/Command.msg"
-  ]
-}
