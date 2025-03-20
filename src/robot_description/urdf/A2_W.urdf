@@ -16,7 +16,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/base_link.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/base_link.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -53,7 +53,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_1_yaw.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_1_yaw.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -71,7 +71,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_1.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_1.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -82,7 +82,7 @@
 
     <collision>
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_1.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_1.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
     </collision>
@@ -97,7 +97,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_2_yaw.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_2_yaw.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -115,7 +115,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_2.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_2.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -125,7 +125,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_2.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_2.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
     </collision>
@@ -139,7 +139,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_3_yaw.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_3_yaw.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -157,7 +157,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_3.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_3.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -167,7 +167,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_3.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_3.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
     </collision>
@@ -181,7 +181,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_4_yaw.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_4_yaw.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -199,7 +199,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_4.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_4.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -209,7 +209,7 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/wheel_4.STL" scale="1.0 1.0 1.0" />
+        <mesh filename="package:///robot_description/meshes/A2_W/wheel_4.STL" scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
     </collision>
@@ -222,7 +222,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/body_link1.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/body_link1.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -245,7 +245,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/body_link2.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/body_link2.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -269,7 +269,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/head_link.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/head_link.STL"
           scale="1.0 1.0 1.0" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -429,7 +429,7 @@
   <link name="arm_base_link">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/arm_base_link.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/arm_base_link.STL" />
       </geometry>
       <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -470,7 +470,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l1.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l1.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -503,7 +503,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l2.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l2.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -535,7 +535,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l3.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l3.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -566,7 +566,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l4.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l4.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -605,7 +605,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l5.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l5.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -637,7 +637,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l6.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l6.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -661,7 +661,7 @@
   <link name="left_arm_link07_transition">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/l7.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/l7.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -702,7 +702,7 @@
   <link name="left_finger_base">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/finger_base.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/finger_base.STL"
           scale="0.001 0.001 0.001" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -734,7 +734,7 @@
   <link name="left_finger_left">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/finger.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/finger.STL"
           scale="0.001 0.001 0.001" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -760,7 +760,7 @@
   <link name="left_finger_right">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/finger.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/finger.STL"
           scale="0.001 0.001 0.001" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -799,7 +799,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r1.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r1.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -831,7 +831,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r2.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r2.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -863,7 +863,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r3.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r3.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -894,7 +894,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r4.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r4.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -933,7 +933,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r5.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r5.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -966,7 +966,7 @@
     </inertial>
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r6.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r6.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -990,7 +990,7 @@
   <link name="right_arm_link07_transition">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/r7.STL" />
+        <mesh filename="package:///robot_description/meshes/A2_W/r7.STL" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
       <material name="">
@@ -1031,7 +1031,7 @@
   <link name="right_finger_base">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/finger_base.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/finger_base.STL"
           scale="0.001 0.001 0.001" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -1063,7 +1063,7 @@
   <link name="right_finger_left">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/finger.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/finger.STL"
           scale="0.001 0.001 0.001" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />
@@ -1089,7 +1089,7 @@
   <link name="right_finger_right">
     <visual name="">
       <geometry>
-        <mesh filename="file:///mnt/nvme1n1p6/PLCT/NAV2/nav2_sim/src/robot_description/meshes/A2_W/finger.STL"
+        <mesh filename="package:///robot_description/meshes/A2_W/finger.STL"
           scale="0.001 0.001 0.001" />
       </geometry>
       <origin rpy="0.0 -0.0 0.0" xyz="0.0 0.0 0.0" />

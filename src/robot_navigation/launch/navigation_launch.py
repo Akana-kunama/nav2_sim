@@ -35,7 +35,7 @@ def generate_launch_description():
         default_value=PathJoinSubstitution([
             FindPackageShare("robot_slam"),
             "maps",
-            "saved_map.yaml"
+            "map_mar_19.yaml"
         ]),
         description="Full path to the map YAML file to use for navigation"
     )
@@ -184,7 +184,7 @@ def generate_launch_description():
 
     return LaunchDescription([
         # robot_description_launch,
-        robot_display_launch,
+        # robot_display_launch,
         declare_use_sim_time_cmd,
         declare_map_file_cmd,
         declare_nav2_params_file_cmd,

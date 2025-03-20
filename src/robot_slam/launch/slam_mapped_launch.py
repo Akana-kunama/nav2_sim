@@ -15,9 +15,9 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 
 def ensure_map_directory(context, *args, **kwargs):
-    map_saving_path = LaunchConfiguration('map_saving_path').perform(context)
+    map_path = LaunchConfiguration('map_path').perform(context)
     # Extract the directory part from the path
-    map_dir = os.path.dirname(map_saving_path)
+    map_dir = os.path.dirname(map_path)
     if not os.path.exists(map_dir):
         os.makedirs(map_dir)
         print(f"[INFO] Created map saving directory: {map_dir}")
@@ -29,60 +29,44 @@ def ensure_map_directory(context, *args, **kwargs):
 
 
 def generate_launch_description():
-    use_sim_time = LaunchConfiguration("use_sim_time")
-    
     # Declare the launch arguments
     slam_params_file = LaunchConfiguration('slam_params_file')
-    map_saving_path = LaunchConfiguration('map_saving_path')
+    map_path = LaunchConfiguration('map_path')
     world_file = LaunchConfiguration('world')
     rviz_file  = LaunchConfiguration('rvizconfig')
-    
-
-
-    robot_slam_pkg = get_package_share_directory('robot_slam')
-    robot_environment_pkg = get_package_share_directory('robot_environment')
-    nav2_pkg = get_package_share_directory('navigation2')
-
+    use_sim_time = LaunchConfiguration("use_sim_time")
 
 
     # Declare the 'slam_params_file' argument
-    slam_params_file_declare = DeclareLaunchArgument(
+    declare_slam_params_file = DeclareLaunchArgument(
         'slam_params_file',
         default_value=PathJoinSubstitution(
-            [FindPackageShare('robot_slam'), 'config', 'slam_mapping_params.yaml']
+            [FindPackageShare('robot_slam'), 'config', 'slam_mapped_params.yaml']
         ),
         description='Full path to the SLAM parameters file to use'
     )
 
     # Define the default map saving path
     default_map_path = PathJoinSubstitution(
-        [FindPackageShare("robot_slam"), 'maps', 'saved_map.yaml']
+        [FindPackageShare("robot_slam"), 'maps', 'map_mar_19.yaml']
     )
 
-    map_saving_path_declare = DeclareLaunchArgument(
-        'map_saving_path',
+    declare_map_file_cmd= DeclareLaunchArgument(
+        'map_path',
         default_value= default_map_path ,
-        description='the path to save the map'
+        description='Full path to the map YAML file'
     )
 
 
-    use_sim_time_declare = DeclareLaunchArgument(
+    declare_use_sim_time = DeclareLaunchArgument(
         'use_sim_time',
         default_value='true',
         description='use simulation/Gazebo clock'
     )
 
-    world_file_declare = DeclareLaunchArgument(
-        'world',
-        default_value=os.path.join(
-            get_package_share_directory('robot_environment'),
-            'worlds',
-            'sim_world.world'
-        ),
-        description='Absolute path to the world file to load'
-    )
 
-    rviz_config_path_declare = DeclareLaunchArgument(
+
+    declare_rviz_config_path = DeclareLaunchArgument(
         'rvizconfig',
         default_value=os.path.join(
             get_package_share_directory('robot_slam'),
@@ -114,12 +98,35 @@ def generate_launch_description():
 
     # Create the SLAM Toolbox node
 
+
     slam_toolbox_node = Node(    # node for not using saved map
         package='slam_toolbox',
-        executable='sync_slam_toolbox_node',
+        executable='async_slam_toolbox_node',
         name='slam_toolbox',
         output='screen',
-        parameters=[slam_params_file,{'map_file_name':''}]
+        parameters=[slam_params_file,{'use_sim_time': use_sim_time}]
+    )
+
+    map_server_node = Node(
+            package="nav2_map_server",
+            executable="map_server",
+            name="map_server",
+            output="screen",
+            parameters=[{"use_sim_time": use_sim_time, "yaml_filename": map_path}],
+    )
+
+    lifecycle_manager_node = Node(
+        package="nav2_lifecycle_manager",
+                executable="lifecycle_manager",
+                name="lifecycle_manager_navigation",
+                output="screen",
+                parameters=[{
+                    "use_sim_time": use_sim_time,
+                    "autostart": True,
+                    "node_names": [
+                         "map_server",
+                         ],
+                }],
     )
 
     # Log the SLAM parameters file being used
@@ -128,15 +135,15 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        slam_params_file_declare,
-        map_saving_path_declare,
-        use_sim_time_declare,
-        world_file_declare,
-        rviz_config_path_declare,
+        declare_slam_params_file,
+        declare_map_file_cmd,
+        declare_use_sim_time,
+        declare_rviz_config_path,
         
         
         ensure_map_dir_action,
         slam_toolbox_node,
+        map_server_node,
         # robot_display_launch,
         log_slam_params_cmd
     ])
